@@ -27,33 +27,33 @@ a{
 a:hover{
     color: #95AC3C;
     transition: 0.3s all;
-}
-#Download{
-    display: flex;
-    justify-content: center;
-    margin-right: 24px;
-    padding: 4px;
-    font-weight: bold;
-    width: 180px;
-}
-#TextoDownload:hover{
-    color: #95AC3C;
-    transition: 0.3s all;
     text-decoration: underline #95AC3C 5px;
     -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: #333C4D;
 }
 .TextoHome:hover{
     text-decoration: underline #95AC3C 5px;
-    -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: black;
 }
+
                                                                                 
                                                         /* --- CORPO --- */
                                                                                 
 body{
     background-color: #333C4D;
 }
+#Grafico{
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grafico1{
+    margin-left: -20px;
+}
+#grafico2{
+    margin-left: 20px;
+}
+
 
                                                         /* --- FOOTER --- */
 
