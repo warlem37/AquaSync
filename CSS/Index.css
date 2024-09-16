@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+                                                        /* --- CABECALHO --- */
+
+header{
+    display: flex;
+    background-color: #1B94B7;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    font-size: 25px;
+}                                                                          
+a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: #95AC3C;
+    transition: 0.3s all;
+}
+#Download{
+    display: flex;
+    justify-content: center;
+    margin-right: 24px;
+    padding: 4px;
+    font-weight: bold;
+    width: 180px;
+}
+#TextoDownload:hover{
+    color: #95AC3C;
+    transition: 0.3s all;
+    text-decoration: underline #95AC3C 5px;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black;
+}
+.TextoHome:hover{
+    text-decoration: underline #95AC3C 5px;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black;
+}
+                                                                                
+                                                        /* --- CORPO --- */
+                                                                                
+body{
+    background-color: #333C4D;
+}
+
+                                                        /* --- FOOTER --- */
+
+footer{
+    color: #1B94B7;
+    display: flex;
+	border-top: 1px solid;
+	cursor: default;
+    justify-content: center;
+}
