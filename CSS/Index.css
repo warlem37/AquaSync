@@ -11,7 +11,7 @@ body{
 }
 
 #app {
-	height: 160vh;
+	height: 230vh;
 	overflow: hidden;
 	position: relative;
   }
@@ -150,7 +150,7 @@ img{
 
 footer{
 	display: flex;
-	color: black;
+	color: white;
 	border-top: 1px solid;
 	cursor: default;
 	align-items: center;
@@ -439,3 +439,60 @@ footer{
 	position: relative;
 	z-index: 2;
   }
+  
+								/* --- BORDA QUARTA --- */
+
+#bordaQuatro {
+width: 100%;
+height: 90vh;
+display: flex;
+align-items: center;
+position: absolute;
+top: 100vh;
+z-index: 10;
+padding: 2rem;
+}
+
+#bordaDentroQuatro {
+display: flex;
+width: 100%;
+height: 40vh;
+aspect-ratio: 5 / 1;
+position: relative;
+background-color: rgb(50 50 50);
+border: 0.5rem solid rgb(30 30 30);
+border-top-right-radius: 1rem;
+border-bottom-left-radius: 1rem;
+overflow: hidden;
+box-shadow: 12px 25px 50px 12px rgb(0 0 0 / 0.5);
+}
+
+#bordaFundoQuatro {
+position: absolute;
+left: 0px;
+top: 0px;
+z-index: 1;
+height: 100%;
+width: 100%;
+background-image: url("https://assets.codepen.io/1468070/Repeatable+Pattern+-+Wavy+Lines.png?format=auto&quality=80");
+background-size: 200%;
+opacity: 0.3;
+animation: move-background 50s linear infinite;
+}
+
+#bordaConteudoQuatro {  
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+padding: 1rem;
+position: relative;
+z-index: 2;
+}
+
+#qsn{
+	left: 10px;
+}
+
+p{
+	top: 30px;
+}
