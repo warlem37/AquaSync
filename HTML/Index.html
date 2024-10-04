@@ -1,35 +1,96 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+		
+		<title>AquaSync</title>
+	</head>
+	<body>
 
-                                                                                <!-- HEAD -->
+							<!--- CABEÇALHO --->
 
-    <head>
-        <meta charset="UTF-8">
-        <title>AquaSync</title>
-        <link rel="stylesheet" href="./Index.css">
-    </head>
+		<header>
+				<article id="titulo">
+					<a href="./Home.html" id="nometitulo"><h1>AquaSync</h1></a>
+				</article>
+				
+			<ul>
+				<a href="#bordaPrimaria"><li>Umidade</li></a>
+				<a href="#bordaSecundaria"><li>Pressão</li></a>
+				<a href="#bordaTres"><li>Bomba</li></a>
+			</ul>
+		</header>
 
-                                                                                <!-- CORPO -->
+							<!--- PÁGINA PRINCIPAL --->
 
-    <body>
-                                                                                <!-- CABECALHO -->
-        <header>
-            <ul>
-                <a href="#"><li class="TextoHome">HOME</li></a>
-                <a href="#Grafico"><li class="TextoHome">GRÁFICO</li></a>
-            </ul>
-        </header>
-        
-                                                                                <!-- TELA PRINCIPAL -->
+	<section id="app">
 
-        <article id="Grafico">
-            <iframe id="grafico1" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2653907/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humidade&type=spline"></iframe>
-            <iframe id="grafico2" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2653907/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Press%C3%A3o&type=line"></iframe>
-        </article>
-                                                                                <!-- FOOTER -->
-        
-        <footer>
-            <p>© 2021 AquaSync. Todos os direitos reservados</p>
-        </footer>
-    </body>
+							<!--- ESTRELAS --->
+
+		<section id="conteiner-estrela">
+			<section id="padrao-estrela">
+				<section id="gradiente-estrela"></section>
+			</section>
+		</section>
+
+							<!--- LINHAS --->
+
+		<section id="conteiner-linhas">
+			<div id="padrao-linhas"></div>
+		</section>
+
+							<!--- PRIMEIRO QUADRADO --->
+									
+		<section id="bordaPrimaria">
+			<section id="bordaDentro">
+			  <div id="bordaFundo"></div>
+			  <section id="bordaConteudo">
+				<h2>Humidade</h2>
+				<div class="bordaMensagem">
+					<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2653907/charts/1?bgcolor=%23323232&color=%231B94B7&dynamic=true&results=60&title=%E2%80%8E&type=spline&yaxismax=100&yaxismin=0"></iframe>
+				</div>
+			  </section>
+			</section>
+		</section>
+
+							<!--- SEGUNDO QUADRADO --->
+			
+		<section id="bordaSecundaria">
+
+			<section id="bordaDentroDois">
+			  <div id="bordaFundoDois"></div>
+			  <section id="bordaConteudoDois">
+				<h2>Pressão</h2>
+				<div class="bordaMensagem">
+					<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2653907/charts/2?bgcolor=%23323232&color=%231B94B7&dynamic=true&results=60&title=%E2%80%8E&type=line"></iframe>
+				</div>
+			  </section>
+			</section>
+		</section>
+
+							<!--- TERCEIRO QUADRADO --->
+
+		<section id="bordaTres">
+
+			<section id="bordaDentroTres">
+			  <div id="bordaFundoTres"></div>
+			  <section id="bordaConteudoTres">
+				<h2>Bomba</h2>
+				<div class="bordaMensagem">
+					<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2653907/charts/3?bgcolor=%23323232&color=%231B94B7&dynamic=true&results=60&title=%E2%80%8E&type=line"></iframe>
+				</div>
+			  </section>
+			</section>
+		</section>
+
+	</section>
+
+							<!--- RODAPÉ --->
+
+	<footer>
+		<p> © 2021 AquaSync. Todos os direitos reservados </p>
+	</footer>
+	</body>
 </html>
