@@ -96,9 +96,9 @@ h1{
 	display: block;
 	position: absolute;
 	left: 28vh;
-	top: -5px;
+	top: 10px;
 	color: white;
-	font-size: 45px;
+	font-size: 60px;
  }
 
 li{
@@ -492,7 +492,6 @@ z-index: 2;
 #qsn{
 	left: 10px;
 }
-
-p{
-	top: 30px;
+#textA{
+	font-size: 33px;
 }
